@@ -374,4 +374,5 @@ from callbacks import prediccion
 
 # 3. Ejecutar la app en modo desarrollo
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    port = int(os.environ.get("PORT", 8050))
+    app.run(host="0.0.0.0", port=port, debug=False)
