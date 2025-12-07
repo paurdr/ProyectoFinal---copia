@@ -21,6 +21,7 @@ numpy==2.3.4
 openpyxl==3.1.5
 packaging==23.2
 pandas==2.3.3
+pmdarima==2.1.1
 plotly==5.17.0
 pyproject_hooks==1.2.0
 python-dateutil==2.8.2
