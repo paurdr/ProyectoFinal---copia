@@ -8,7 +8,6 @@ import io
 import base64
 import plotly.graph_objects as go
 import plotly.express as px
-from pmdarima import auto_arima
 from sklearn.ensemble import IsolationForest
 import plotly.io as pio
 
