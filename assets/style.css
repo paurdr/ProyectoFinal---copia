@@ -1,0 +1,242 @@
+/* ============================================
+   🎨 FUENTE PARA TÍTULOS (similar a tu portada)
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* ===========================
+   🎨 PALETA DE COLORES
+   =========================== */
+:root {
+    --bg-dark: #0f2a24;        /* Verde bosque oscuro */
+    --bg-card: #14352f;        /* Boxes más claros */
+    --accent: #ffb48a;         /* Coral suave / naranja pastel */
+    --text-light: #f4f1e9;     /* Crema */
+}
+
+/* ===========================
+   🌿 FONDO GENERAL
+   =========================== */
+body, .dash-container, #app, html {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-light) !important;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===========================
+   🧡 TITULOS
+   =========================== */
+h2, h3, h4, h5, h6 {
+    color: var(--accent) !important;
+    font-weight: 600;
+}
+
+/* ===========================
+   🧡 TITULO PRINCIPAL
+   =========================== */
+h1 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 3.4rem !important; /* Ajusta si quieres más grande */
+    color: var(--accent) !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* ===========================
+   📦 CARDS / DIVS / TABS
+   =========================== */
+div, .tab, .dash-table-container, .cell {
+    background-color: transparent !important;
+    color: var(--text-light) !important;
+}
+
+/* ===========================
+   📂 TABS
+   =========================== */
+.dash-tabs > .tab {
+    background-color: var(--bg-card) !important;
+    border: none !important;
+    padding: 12px 20px !important;
+    font-size: 16px;
+    color: var(--text-light) !important;
+}
+
+.dash-tabs > .tab--selected {
+    background-color: var(--accent) !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+/* ===========================
+   📊 GRÁFICOS PLOTLY
+   =========================== */
+
+.js-plotly-plot .plotly .main-svg {
+    background-color: transparent !important;
+}
+
+/* Leyendas */
+.legend text {
+    fill: var(--text-light) !important;
+}
+
+/* Ejes */
+.xtick text, .ytick text {
+    fill: var(--text-light) !important;
+}
+
+/* Cuadrícula suave */
+.gridlayer .xgrid, 
+.gridlayer .ygrid {
+    stroke: #2a4d45 !important;
+}
+
+/* Título del gráfico */
+.gtitle {
+    fill: var(--accent) !important;
+}
+
+/* ===========================
+   🟧 BOTONES
+   =========================== */
+button, .button {
+    background-color: var(--accent) !important;
+    color: black !important;
+    border-radius: 8px;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* ===========================
+   📏 SLIDERS
+   =========================== */
+.rc-slider-track {
+    background-color: var(--accent) !important;
+}
+
+.rc-slider-dot-active {
+    border-color: var(--accent) !important;
+}
+
+.rc-slider-handle {
+    border: solid 2px var(--accent) !important;
+}
+
+.rc-slider-handle:hover {
+    border-color: var(--text-light) !important;
+}
+
+/* ===========================
+   📑 TABLAS
+   =========================== */
+table {
+    color: var(--text-light) !important;
+    border-collapse: collapse;
+}
+
+th {
+    color: var(--accent) !important;
+    border-bottom: 1px solid var(--accent);
+}
+
+td {
+    padding: 6px;
+    border-bottom:
+}
+
+/* ============================================
+   🎯 ESTILO PARA DROPDOWNS (dcc.Dropdown)
+   ============================================ */
+
+/* Caja cerrada del dropdown */
+.Select-control {
+    background-color: #1f4b43 !important; /* verde más claro */
+    border-color: var(--accent) !important;
+    color: var(--text-light) !important;
+}
+
+/* Texto escrito en el dropdown */
+.Select-value-label {
+    color: var(--text-light) !important;
+}
+
+/* Area donde está el texto */
+.Select-placeholder {
+    color: #e6d8c9 !important; /* crema suave */
+}
+
+/* Flecha del dropdown */
+.Select-arrow {
+    border-color: var(--accent) transparent transparent !important;
+}
+
+/* ===========================
+   📌 MENÚ DESPLEGADO
+   =========================== */
+.Select-menu-outer {
+    background-color: #1f4b43 !important;   /* verde clarito */
+    z-index: 9999 !important;               /* ✔ tapa todo */
+    border: 1px solid var(--accent) !important;
+}
+
+/* Opciones dentro del menú */
+.Select-option {
+    background-color: #1f4b43 !important;
+    color: var(--text-light) !important;
+}
+
+/* Al pasar el ratón */
+.Select-option:hover {
+    background-color: var(--accent) !important;
+    color: black !important;
+}
+
+/* Opción seleccionada */
+.Select-option.is-selected {
+    background-color: #30685f !important;
+    color: var(--text-light) !important;
+}
+
+/* ============================================
+   🌿 ESTILO INPUTS DEL BUSCADOR (solo Buscador)
+   ============================================ */
+
+/* Inputs de texto y número */
+#buscador-descripcion,
+#monto-min,
+#monto-max {
+    background-color: var(--bg-card) !important;  /* Verde carta */
+    color: var(--text-light) !important;
+    border: 1px solid var(--accent) !important;   /* Coral */
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+/* Inputs del DatePicker */
+.DateInput_input,
+.DateInput_input_1,
+.DateRangePickerInput__text {
+    background-color: var(--bg-card) !important;
+    color: var(--text-light) !important;
+    border: none !important;
+}
+
+/* Contenedor del DatePicker */
+.DateRangePicker,
+.DateRangePickerInput {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--accent) !important;
+    border-radius: 6px !important;
+}
+
+/* Placeholder */
+.DateInput_input::placeholder {
+    color: var(--text-light) !important;
+    opacity: 0.6;
+}
