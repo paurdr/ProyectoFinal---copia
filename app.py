@@ -10,6 +10,8 @@ import plotly.graph_objects as go
 import plotly.express as px
 from sklearn.ensemble import IsolationForest
 import plotly.io as pio
+import os
+
 
 # 1. Crear la aplicación Dash
 app = Dash(__name__, suppress_callback_exceptions=True)
